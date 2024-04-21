@@ -23,8 +23,9 @@ def DFT_slow(data):
       #  print(DFT[s])
     DFT[s] /= N
     """
-    Trong mot so cong thuc ben ngoai em khong co thay phan 1/N
-    Em thu bo 1/N thi np.allclose -> True
+    Note: 
+    Some Discrete Fourier Transform formula doesn't include the 1/N part
+    Therefore, removing the DFT[s] /= N part will match this fucntion result to the np.fft.fft()
     """
 
   return DFT
@@ -87,6 +88,7 @@ if __name__ == '__main__':
     gray_img = np.mean(img, -1)
     row_fft, row_col_fft = DFT_2D(gray_img)
     show_img(gray_img, row_fft, row_col_fft)
+    # print(row_fft.dtype)
 
  
 

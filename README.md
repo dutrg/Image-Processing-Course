@@ -8,8 +8,6 @@
 
 - **ex1.py**: Implement several image manipulations and visualize their effects.
 
-- **hw1_report.pdf**: All the ex1.py performed functions and their result.  
-
 ### HW2
 
 - **ex1.py**: Implement basic image filters by replicate padding as well as manipulating box/mean and median filters.
